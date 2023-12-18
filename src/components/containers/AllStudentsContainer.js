@@ -9,12 +9,7 @@ import Header from './Header';
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from "react-router-dom";
-
-import { 
-  fetchAllStudentsThunk,
-  deleteStudentThunk
-} from '../../store/thunks';
-
+import { fetchAllStudentsThunk, deleteStudentThunk } from '../../store/thunks';
 import AllStudentsView from '../views/AllStudentsView';
 
 class AllStudentsContainer extends Component {
@@ -24,13 +19,13 @@ class AllStudentsContainer extends Component {
   }
 
   // Render All Students view by passing all students data as props to the corresponding View component
-  render(){
-    return(
+  render() {
+    return (
       <div>
         <Header />
-        <AllStudentsView 
+        <AllStudentsView
           students={this.props.allStudents}
-          deleteStudent={this.props.deleteStudent}   
+          deleteStudent={this.props.deleteStudent}
         />
       </div>
     )
