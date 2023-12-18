@@ -123,7 +123,7 @@ export const editStudentThunk = student => async dispatch => {  // The THUNK
     let updatedStudent = await axios.put(`/api/students/${student.id}`, student);
     // Update successful so change state with dispatch
     dispatch(ac.editStudent(updatedStudent));
-  } catch (err) {
+  } catch(err) {
     console.error(err);
   }
 };
