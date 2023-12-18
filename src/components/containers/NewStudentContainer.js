@@ -45,7 +45,7 @@ class NewStudentContainer extends Component {
       lastname: this.state.lastname,
       campusId: this.state.campusId,
       email: this.state.email,
-      imageUrl: this.state.imageUrl,
+      imageUrl: this.state.imageUrl || 'https://cdn-icons-png.flaticon.com/512/8920/8920554.png',
       gpa: this.state.gpa
     };
 

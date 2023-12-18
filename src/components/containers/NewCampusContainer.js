@@ -50,7 +50,7 @@ class NewCampusContainer extends Component {
         let campus = {
             name: this.state.name,
             address: this.state.address,
-            imageUrl: this.state.imageUrl,
+            imageUrl: this.state.imageUrl || 'https://media.istockphoto.com/id/157505397/photo/quandrangle-lawn-at-the-university-of-washington.jpg?s=612x612&w=0&k=20&c=y1TIffgQaLN8AoxZCExNxl_wKoeMq9xIy3_kb8XY2Yg=',
             description: this.state.description
         };
 
